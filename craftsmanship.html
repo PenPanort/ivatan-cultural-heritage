@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Craftsmanship: Basketry and Weaving</title>
+  <title>Cultural Preservation & UNESCO Recognition</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-image: url('images/batanes.jpg');
+      background-color: #f3f6fb;
+      background-image: url('images/batanes.jpg'); /* <-- Replace with your image path */
       background-size: cover;
-      background-attachment: fixed;
       background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
       color: #2e2e2e;
       margin: 0;
       padding: 0 2rem;
@@ -20,13 +22,12 @@
 
     header {
       text-align: center;
-      margin: 3rem 0 2rem;
-      padding: 0 1rem;
+      margin: 4rem 0 2rem;
     }
 
     header h1 {
       font-family: 'Georgia', serif;
-      font-size: 3.5rem;
+      font-size: 4.5rem;
       color: #2e4b1e;
       text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.7);
       margin: 0;
@@ -50,18 +51,15 @@
       text-align: center;
     }
 
-    section p,
-    section ul {
-      font-size: 1.6rem;
-      background: rgba(255, 255, 255, 0.9);
+    ul {
+      max-width: 900px;
+      margin: 2rem auto;
       padding: 2rem 3rem;
+      background: rgba(255, 255, 255, 0.9);
       border-radius: 14px;
       box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
-      margin: 2rem auto;
-      max-width: 900px;
-    }
-
-    ul {
+      font-size: 1.6rem;
+      line-height: 1.8;
       list-style: square inside;
       color: #2e2e2e;
     }
@@ -70,16 +68,15 @@
       color: #3a4a14;
     }
 
-    .media-gallery {
+    .center-image {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 1.5em;
       margin: 3em 0;
     }
 
-    .media-gallery img,
-    .media-gallery video {
+    .center-image img {
       width: 450px;
       height: 300px;
       object-fit: cover;
@@ -89,15 +86,26 @@
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .media-gallery img:hover,
-    .media-gallery video:hover {
+    .center-image img:hover {
       transform: scale(1.05);
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
     }
 
+    video {
+      display: block;
+      margin: 2em auto;
+      width: 450px;
+      height: 300px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      object-fit: cover;
+    }
+
     .back-link {
+      display: block;
       text-align: center;
       margin-top: 3em;
+      width: 100%;
     }
 
     .back-link a {
@@ -112,6 +120,9 @@
       box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.25);
       transition: all 0.3s ease;
       display: inline-block;
+      max-width: 100%;
+      white-space: nowrap;
+      box-sizing: border-box;
     }
 
     .back-link a:hover {
@@ -122,31 +133,29 @@
 
     @media (max-width: 768px) {
       header h1 {
-        font-size: 2.2rem;
-        line-height: 1.3;
-        padding: 0 0.5rem;
+        font-size: 3rem;
       }
 
       section h2 {
         font-size: 2.5rem;
       }
 
-      section p,
-      section ul {
+      ul {
         font-size: 1.3rem;
         padding: 1.5rem 2rem;
       }
 
-      .media-gallery img,
-      .media-gallery video {
+      .center-image img,
+      video {
         width: 90%;
         height: auto;
       }
 
       .back-link a {
         font-size: 1.4rem;
-        padding: 0.8em 1.5em;
         max-width: 90vw;
+        white-space: normal;
+        padding: 0.8em 1.5em;
       }
     }
   </style>
@@ -157,31 +166,25 @@
   </header>
 
   <section>
-    <h2>Craftsmanship: Basketry and Weaving</h2>
+    <h2>Cultural Preservation & UNESCO Recognition</h2>
 
     <ul>
-      <li><strong>Ivatan Basketry:</strong> Utilizing local materials, these baskets serve various purposes, from daily chores to ceremonial uses.</li>
+      <li><strong>National Museum Branch:</strong> Located in Uyugan, this institution showcases Ivatan history, artifacts, and traditions.</li>
     </ul>
 
-    <div class="media-gallery">
-      <img src="images/basketry.jpg" alt="Ivatan basketry samples" />
-      <img src="images/tavahus.jpg" alt="Tavahus traditional Ivatan basket" />
-      <img src="images/basketry1.jpg" alt="Detailed woven basket" />
-      <img src="images/basketry2.jpg" alt="Close-up of Ivatan weaving technique" />
+    <div class="center-image">
+      <img src="images/museum.jpeg" alt="National Museum" />
+      <img src="images/muha%20(2).jpg" alt="Museum Interior" />
+      <img src="images/muha%20(3).jpg" alt="Museum Exhibit" />
+      <img src="images/muha%20(5).jpg" alt="Ivatan Culture Display" />
+      <img src="images/muha%20(6).jpg" alt="Artifacts Display" />
+      <img src="images/muha%20(8).jpg" alt="Traditional Items" />
+      <img src="images/vangaa.jpg" alt="Vangaa Artifact" />
     </div>
 
     <ul>
-      <li><strong>Salakot Hat Weaving:</strong> Crafting traditional wide-brimmed hats that provide protection from the elements.</li>
+      <li><strong>UNESCO Tentative Listing:</strong> Batanes has been included in UNESCO's tentative list for World Heritage inscription, emphasizing its cultural and natural significance.</li>
     </ul>
-
-    <div class="media-gallery">
-      <img src="images/weaving.webp" alt="Weaving traditional fibers" />
-      <img src="images/weav.jpg" alt="Ivatan weaving in progress" />
-    </div>
-
-    <p>
-      These crafts are integral to the community's daily life and are recognized as vital elements of their intangible cultural heritage.
-    </p>
 
     <div class="back-link">
       <a href="index.html">← Back to Home</a>
