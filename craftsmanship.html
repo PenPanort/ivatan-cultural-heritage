@@ -8,7 +8,7 @@
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f3f6fb;
-      background-image: url('images/batanes.jpg'); /* <-- Replace with your image path */
+      background-image: url('images/batanes.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -22,12 +22,13 @@
 
     header {
       text-align: center;
-      margin: 4rem 0 2rem;
+      margin: 3rem 0 2rem;
+      padding: 0 1rem;
     }
 
     header h1 {
       font-family: 'Georgia', serif;
-      font-size: 4.5rem;
+      font-size: 4rem;
       color: #2e4b1e;
       text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.7);
       margin: 0;
@@ -70,8 +71,8 @@
 
     .center-image {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 1.5em;
       margin: 3em 0;
     }
@@ -131,31 +132,43 @@
       box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.3);
     }
 
+    /* Responsive adjustments */
     @media (max-width: 768px) {
+      body {
+        padding: 0 1rem;
+        font-size: 1.4rem;
+      }
+
       header h1 {
-        font-size: 3rem;
+        font-size: 2.4rem;
+        line-height: 1.3;
+      }
+
+      section {
+        padding: 2rem;
       }
 
       section h2 {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
       }
 
       ul {
         font-size: 1.3rem;
-        padding: 1.5rem 2rem;
+        padding: 1.5rem;
       }
 
       .center-image img,
       video {
-        width: 90%;
+        width: 100%;
         height: auto;
+        max-width: 100%;
       }
 
       .back-link a {
         font-size: 1.4rem;
-        max-width: 90vw;
+        padding: 0.8em 1.2em;
         white-space: normal;
-        padding: 0.8em 1.5em;
+        max-width: 90%;
       }
     }
   </style>
