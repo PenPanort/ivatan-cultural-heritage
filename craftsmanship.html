@@ -6,169 +6,138 @@
   <title>Cultural Preservation & UNESCO Recognition</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f3f6fb;
-      background-image: url('images/batanes.jpg');
+      font-family: 'Georgia', serif;
+      background-color: #fcf9f3;
+      background-image: url('images/scrapbook-bg.png'); /* Optional: use a subtle paper texture */
       background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
       background-attachment: fixed;
-      color: #2e2e2e;
       margin: 0;
-      padding: 0 2rem;
-      font-size: 1.6rem;
-      line-height: 2;
+      padding: 0;
+      color: #3e2f1c;
     }
 
     header {
       text-align: center;
-      margin: 3rem 0 2rem;
-      padding: 0 1rem;
+      padding: 3rem 1rem 2rem;
     }
 
     header h1 {
-      font-family: 'Georgia', serif;
-      font-size: 4rem;
-      color: #2e4b1e;
-      text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.7);
-      margin: 0;
+      font-size: 3.8rem;
+      color: #5a3e2b;
+      text-shadow: 2px 2px 0 #f5deb3;
+      border-bottom: 5px double #c4a484;
+      display: inline-block;
+      padding: 0.5rem 2rem;
+      margin-bottom: 0;
     }
 
     section {
-      max-width: 1200px;
-      margin: 0 auto 5rem;
-      background: #e6e9f8;
-      padding: 4rem;
-      border-radius: 22px;
-      border: 3px solid #4b5e1f;
-      box-shadow: 0 10px 25px rgba(75, 66, 45, 0.12);
+      max-width: 1000px;
+      margin: 3rem auto;
+      background-color: #fffef8;
+      border: 5px dashed #c4a484;
+      padding: 3rem 2rem;
+      border-radius: 20px;
+      box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.15);
     }
 
     section h2 {
-      font-family: 'Georgia', serif;
-      font-size: 3.6rem;
-      color: #3a4a14;
-      margin-bottom: 2rem;
+      font-size: 3rem;
       text-align: center;
+      color: #4d371f;
+      margin-bottom: 2rem;
+      border-bottom: 3px dotted #b2967d;
+      padding-bottom: 1rem;
     }
 
     ul {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 2rem 3rem;
-      background: rgba(255, 255, 255, 0.9);
-      border-radius: 14px;
-      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
-      font-size: 1.6rem;
-      line-height: 1.8;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
       list-style: square inside;
-      color: #2e2e2e;
+      margin: 2rem auto;
+      max-width: 90%;
+    }
+
+    ul li {
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
     }
 
     ul li strong {
-      color: #3a4a14;
+      color: #5b402b;
     }
 
-    .center-image {
+    .scrapbook-gallery {
       display: flex;
       flex-wrap: wrap;
+      gap: 1.5rem;
       justify-content: center;
-      gap: 1.5em;
-      margin: 3em 0;
+      margin-top: 2rem;
     }
 
-    .center-image img {
-      width: 450px;
-      height: 300px;
+    .scrapbook-gallery img {
+      width: 280px;
+      height: 200px;
       object-fit: cover;
+      border: 4px solid #e3caa5;
       border-radius: 12px;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-      background: #fff;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      transition: transform 0.3s ease;
     }
 
-    .center-image img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-    }
-
-    video {
-      display: block;
-      margin: 2em auto;
-      width: 450px;
-      height: 300px;
-      border-radius: 12px;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-      object-fit: cover;
+    .scrapbook-gallery img:hover {
+      transform: rotate(-1deg) scale(1.03);
     }
 
     .back-link {
-      display: block;
       text-align: center;
-      margin-top: 3em;
-      width: 100%;
+      margin-top: 3rem;
     }
 
     .back-link a {
-      font-size: 1.8rem;
       text-decoration: none;
+      font-size: 1.6rem;
       color: #5a3e2b;
-      background-color: #ffe4b5;
+      background-color: #fff7e0;
       border: 3px dashed #c4a484;
-      padding: 1em 2em;
-      border-radius: 14px;
-      font-family: 'Times New Roman', serif;
-      box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.25);
+      padding: 0.8rem 1.8rem;
+      border-radius: 12px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
       transition: all 0.3s ease;
-      display: inline-block;
-      max-width: 100%;
-      white-space: nowrap;
-      box-sizing: border-box;
+      font-family: 'Courier New', Courier, monospace;
     }
 
     .back-link a:hover {
-      background-color: #fff7d6;
-      transform: translateY(-5px);
-      box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.3);
+      background-color: #fff1c7;
+      transform: scale(1.05);
     }
 
-    /* Responsive adjustments */
     @media (max-width: 768px) {
-      body {
-        padding: 0 1rem;
-        font-size: 1.4rem;
-      }
-
       header h1 {
         font-size: 2.4rem;
-        line-height: 1.3;
-      }
-
-      section {
-        padding: 2rem;
       }
 
       section h2 {
-        font-size: 2.4rem;
+        font-size: 2rem;
       }
 
       ul {
+        padding: 1.2rem;
         font-size: 1.3rem;
-        padding: 1.5rem;
       }
 
-      .center-image img,
-      video {
-        width: 100%;
+      .scrapbook-gallery img {
+        width: 90%;
         height: auto;
-        max-width: 100%;
       }
 
       .back-link a {
         font-size: 1.4rem;
-        padding: 0.8em 1.2em;
-        white-space: normal;
-        max-width: 90%;
+        padding: 0.6rem 1.2rem;
+        display: inline-block;
       }
     }
   </style>
@@ -185,7 +154,7 @@
       <li><strong>National Museum Branch:</strong> Located in Uyugan, this institution showcases Ivatan history, artifacts, and traditions.</li>
     </ul>
 
-    <div class="center-image">
+    <div class="scrapbook-gallery">
       <img src="images/museum.jpeg" alt="National Museum" />
       <img src="images/muha%20(2).jpg" alt="Museum Interior" />
       <img src="images/muha%20(3).jpg" alt="Museum Exhibit" />
